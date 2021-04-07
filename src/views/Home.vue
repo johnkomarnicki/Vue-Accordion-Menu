@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <AccordionMenu />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import AccordionMenu from "../components/AccordionMenu";
 export default {
-  name: 'Home',
+  name: "home",
   components: {
-    HelloWorld
-  }
-}
+    AccordionMenu,
+  },
+};
 </script>
+
+<style>
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+</style>
